@@ -30,7 +30,7 @@ cleos set contract eoscrud ../eoscrud -p eoscrud
 While interacting with the contract, you'll see the `print` logs inside the EOS server console.
 
 
-### Create
+### Create (id, user, data)
 ```
 cleos push action eoscrud create '[1, "user", "oh heyyy this is new"]' -p eoscrud
 
@@ -39,7 +39,7 @@ cleos push action eoscrud create '[1, "user", "oh heyyy this is new"]' -p eoscru
 // [(eoscrud,create)->eoscrud]: CONSOLE OUTPUT END   =====================
 ```
 
-### Read
+### Read (id)
 ```
 cleos push action eoscrud read '[1]' -p eoscrud
 
@@ -48,7 +48,7 @@ cleos push action eoscrud read '[1]' -p eoscrud
 // [(eoscrud,read)->eoscrud]: CONSOLE OUTPUT END   =====================
 ```
 
-### Update
+### Update (id, data)
 ```
 cleos push action eoscrud update '[1, "this is updated"]' -p eoscrud
 
@@ -57,7 +57,7 @@ cleos push action eoscrud update '[1, "this is updated"]' -p eoscrud
 // [(eoscrud,update)->eoscrud]: CONSOLE OUTPUT END   =====================
 ```
 
-### Destroy
+### Destroy (id)
 ```
 cleos push action eoscrud destroy '[1]' -p eoscrud
 
