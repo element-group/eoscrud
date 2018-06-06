@@ -3,6 +3,12 @@ This is a very minimal example of an EOS Smart Contract that will do 4 simple th
 This contract is basically a simple database without any great features. Each "record" includes an `id`, `user`, and `data` which is a string. 
 
 ### Setup
+This step requires you to have a EOS blockchain server already setup and running. You can follow the [Tutorial](https://github.com/EOSIO/eos/wiki/Local-Environment#building-eosio) to get up and running. 
+```
+// run the EOS server with --contracts-console
+nodeos -e -p eosio --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --contracts-console
+```
+Then clone this repo.
 ```
 git clone https://github.com/element-group/eoscrud
 cd eoscrud
